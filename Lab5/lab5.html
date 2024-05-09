@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #5 - Implementar aplicación para captura de notas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contador de Votos</h1>
+        <div>
+            <label for="candidate-name">Nombre del Candidato:</label>
+            <input type="text" id="candidate-name">
+        </div>
+        <div>
+            <label for="candidate-color">Color en Hexadecimal:</label>
+            <input type="color" id="candidate-color">
+        </div>
+        <button onclick="addCandidate()">Agregar Candidato</button>
+        <ul id="candidate-list"></ul>
+        <div id="chart" class="chart"></div>
+    </div>
+    
+    <script src="./lab5.js"></script>
+</body>
+</html>
