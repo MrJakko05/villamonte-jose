@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header id="profile-header">
+        <nav id="nav-bar">
+            <span id="user-home">Home</span>
+            <span id="logout-btn">Log Out</span>
+        </nav>
+    </header>
+
+    <section class="profile-container">
+        <h1>Actualiza tus datos</h1>
+        <form id="profileForm">
+            <label for="profileName">Nombre: </label>
+            <input type="text" id="profileName" required>
+            <label for="profilePassword">Nueva Contraseña: </label>
+            <input type="password" id="profilePassword">
+            <button type="submit">Actualizar</button>
+        </form>
+    </section>
+    <script src="profile.js"></script>
+
+</body>
+</html>

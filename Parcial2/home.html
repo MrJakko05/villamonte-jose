@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">        
+        <h2 id="home-title">Bienvenido(a), <span id="userData"></span></h2>
+        <nav id="nav-bar">
+            <!-- <a href="./profile.html" class=""><span id="user-profile">Profile</span></a> -->
+            <span id="user-profile">Profile</span>
+            <span id="logout-btn">Log Out</span>
+        </nav>
+    </header>
+
+    <section id="home-container">
+        <!-- Añadir Ingreso o Egreso -->
+        <div>
+            <select id="typeSelect">
+                <option value="income">Ingreso</option>
+                <option value="expense">Egreso</option>
+            </select>
+            <input type="number" id="amountInput" placeholder="Monto">
+            <button id="addButton">Añadir</button>
+        </div>
+        <!-- Mensaje en caso de NO RESULTADO -->
+        <div id="noDataMessage" style="display: none;">No hay resultados para mostrar actualmente, por favor introduzca sus ingresos y egresos</div>
+        <!-- Tabla -->
+        <table id="dataTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Ingresos: <span id="totalIncome">0</span></th>
+                    <th>Egresos: <span id="totalExpense">0</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Tabla se añade de forma dinámica -->
+            </tbody>
+        </table>
+        <!-- Gráfica -->
+        <div class="bar-chart" id="dataChart" style="display: none;">
+            <div class="bar income"><div><span id="incomeBarLabel"></span></div></div>
+            <div class="bar expense"><div><span id="expenseBarLabel"></span></div></div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>
