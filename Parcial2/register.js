@@ -6,7 +6,6 @@
         },
         init() {
             App.bindEvents();
-            // App.handlers.onLoading();
             App.methods.onLoading();
         },
         bindEvents() {
@@ -44,14 +43,6 @@
             handleGoToLogin() {
                 window.location.href = 'login.html';
             },
-            // onLoading() {
-            //     const fromLogin = localStorage.getItem('fromLogin');
-            //     if (!fromLogin) {
-            //         window.location.href = 'login.html';
-            //     } else {
-            //         localStorage.removeItem('fromLogin'); // Limpiar la bandera después de usarla
-            //     }
-            // }
         },
         methods: {
             hashCode(str) {

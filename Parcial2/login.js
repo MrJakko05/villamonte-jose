@@ -6,7 +6,6 @@
         },
         init() {
             App.bindEvents();
-            // App.handlers.onLoading();
             App.methods.onLoading();
         },
         bindEvents() {
@@ -40,17 +39,6 @@
                 localStorage.setItem('fromLogin', true);
                 window.location.href = 'register.html';
             }, 
-            // onLoading() {
-            //     var isLoggedIn = localStorage.getItem("isLoggedIn");
-            //     if (!isLoggedIn) {
-            //         window.location.href = "login.html";
-            //     } else {
-            //         const userDataElement = document.getElementById("userData");
-            //         if (userDataElement) {
-            //             userDataElement.innerHTML = localStorage.getItem("username");
-            //         }
-            //     }
-            // }
         },
         methods: {
             hashCode(str) {
