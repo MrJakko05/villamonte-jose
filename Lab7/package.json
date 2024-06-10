@@ -1,0 +1,8 @@
+{
+  "name": "lab7",
+  "type": "commonjs",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
